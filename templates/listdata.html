@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>List Data Mahasiswa</h1>
+      <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}" class="active">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Tgl Lahir</th>
+                <th>Prodi</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>NOVIA ARDANI</td>
+                <td>204855090</td>
+                <td>2001-11-07</td>
+                <td>TI 5A</td>
+                <td>noviaardani0711@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>HILMI TOHIR</td>
+                <td>204855010</td>
+                <td>2002-08-06</td>
+                <td>TI 5A</td>
+                <td>HilmiTohir@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ELQUSAIRI</td>
+                <td>204855113</td>
+                <td>2001-11-11</td>
+                <td>TI 5A</td>
+                <td>EL@GAMIL.COM</td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>RUSWANTI MULYANA</td>
+                <td>204855101</td>
+                <td>2002-10-20</td>
+                <td>TI 5A</td>
+                <td>ruswantimulyana@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>IRA MIATUN</td>
+                <td>204855033</td>
+                <td>1999-07-12</td>
+                <td>TI 5A</td>
+                <td>IRAMIATUN@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>RIZKA ULFATURRAHMI</td>
+                <td>204855099</td>
+                <td>2001-11-10</td>
+                <td>TI 5A</td>
+                <td>RIZKA ULFATURRAHMI@gmai.com</td> 
+            </tr>
+
+        </tbody>
+    </table>
+      
+    </div>
+  </body>
+</html>
